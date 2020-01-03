@@ -1,0 +1,15 @@
+logging:
+  level: INFO
+  loggers:
+    nl.alirezaa: DEBUG
+
+database:
+  driverClass: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/IPRWCwebshop
+  user: postgres
+  password: welkom
+
+#server:
+#  applicationConnectors:
+#    - type: http
+#      port: 80
