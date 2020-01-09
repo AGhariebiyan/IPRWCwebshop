@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e63f631-e60a-4b6f-9544-5be0b47a9fbc" name="Default Changelist" comment="" />
+    <list default="true" id="8e63f631-e60a-4b6f-9544-5be0b47a9fbc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/DAO/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/enums/AccountRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/model/AccountModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/resources/AccountResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/resources/AccountResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/webshopBackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/webshopBackendApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/alirezaa/resources/AccountResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/alirezaa/resources/AccountResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/alirezaa/webshopBackendApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/alirezaa/webshopBackendApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webshopBackend.iml" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +28,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -23,15 +44,26 @@
     </option>
   </component>
   <component name="ProjectId" id="1Vn7dn0vX43Nm6xuHzcxp1tgRUq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -80,11 +112,34 @@
       <workItem from="1577905959386" duration="9899000" />
       <workItem from="1577969964665" duration="4061000" />
       <workItem from="1577985193050" duration="88000" />
-      <workItem from="1578050120351" duration="3254000" />
+      <workItem from="1578050120351" duration="4266000" />
+      <workItem from="1578063022883" duration="293000" />
+      <workItem from="1578327397483" duration="3681000" />
+      <workItem from="1578386815671" duration="1189000" />
+      <workItem from="1578493253367" duration="3853000" />
+      <workItem from="1578574207347" duration="921000" />
+      <workItem from="1578585657530" duration="5340000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="95" key="#com.intellij.execution.impl.EditConfigurationsDialog" />
+    <state x="184" y="95" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.821/1440.-125.1920.1057@0.23.1440.821" />
   </component>
 </project>

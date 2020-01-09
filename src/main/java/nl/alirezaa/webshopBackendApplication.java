@@ -3,6 +3,7 @@ package nl.alirezaa;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
+import nl.alirezaa.resources.AccountResource;
 import nl.alirezaa.resources.ProductResource;
 import org.eclipse.jetty.servlets.CrossOriginFilter;
 
@@ -47,6 +48,7 @@ public class webshopBackendApplication extends Application<webshopBackendConfigu
         cors.addMappingForUrlPatterns(EnumSet.allOf(DispatcherType.class), true, "/*");
 
         environment.jersey().register(new ProductResource());
+        environment.jersey().register(new AccountResource());
     }
 
 }
