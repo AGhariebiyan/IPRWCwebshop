@@ -1,6 +1,7 @@
 package nl.alirezaa.services;
 
 import nl.alirezaa.DAO.ProductDao;
+import nl.alirezaa.authorization.JWTconnection;
 import nl.alirezaa.model.ProductModel;
 
 import java.sql.SQLException;
@@ -8,6 +9,7 @@ import java.util.List;
 
 public class ProductService {
     private ProductDao productDao;
+    private JWTconnection jwtConnection;
 
     public ProductService(){
         this.productDao = new ProductDao();
@@ -21,8 +23,14 @@ public class ProductService {
         productDao.addProduct(product);
     }
 
-    public void deleteProduct(int id) throws SQLException, ClassNotFoundException{
-        productDao.deleteProduct(id);
+    public boolean deleteProduct(int id, String token) throws SQLException, ClassNotFoundException{
+        if (jwtConnection.verifyJwtToken(token)) {
+            productDao.deleteProduct(id);
+            return true;
+        } else {
+            return false;
+        }
+
     }
 
     public ProductModel getProductById(int id) throws SQLException, ClassNotFoundException{

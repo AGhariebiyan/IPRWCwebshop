@@ -7,6 +7,7 @@ public class AccountModel {
     private String email;
     private String password;
     private String accountType;
+    private String token;
 
     public AccountModel() {}
 
@@ -54,5 +55,15 @@ public class AccountModel {
     @JsonProperty("_accountType")
     public void setAccountType(String accountType) {
         this.accountType = accountType;
+    }
+
+    @JsonProperty("_token")
+    public String getToken() {
+        return token;
+    }
+
+    @JsonProperty("token")
+    public void setToken(String token) {
+        this.token = token;
     }
 }

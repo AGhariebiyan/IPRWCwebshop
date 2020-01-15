@@ -10,6 +10,13 @@ import javax.validation.constraints.*;
 public class webshopBackendConfiguration extends Configuration {
     private DataSourceFactory database = new DataSourceFactory();
 
+    @NotNull
+    private String secret;
+
+    public String getSecret() {
+        return this.secret;
+    }
+
     @JsonProperty("database")
     public DataSourceFactory getDataSourceFactory() { return this.database; }
 
