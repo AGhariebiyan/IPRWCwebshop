@@ -1,7 +1,7 @@
 package nl.alirezaa.services;
 
 import nl.alirezaa.DAO.ProductDao;
-import nl.alirezaa.authorization.JWTconnection;
+import nl.alirezaa.authorization.JWTUtils;
 import nl.alirezaa.model.ProductModel;
 
 import java.sql.SQLException;
@@ -9,7 +9,7 @@ import java.util.List;
 
 public class ProductService {
     private ProductDao productDao;
-    private JWTconnection jwtConnection;
+    private JWTUtils jwtConnection;
 
     public ProductService(){
         this.productDao = new ProductDao();

@@ -2,7 +2,10 @@ package nl.alirezaa.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class AccountModel {
+import javax.security.auth.Subject;
+import java.security.Principal;
+
+public class AccountModel implements Principal {
     private int user_id;
     private String email;
     private String password;
@@ -65,5 +68,15 @@ public class AccountModel {
     @JsonProperty("token")
     public void setToken(String token) {
         this.token = token;
+    }
+
+    @Override
+    public String getName() {
+        return null;
+    }
+
+    @Override
+    public boolean implies(Subject subject) {
+        return false;
     }
 }

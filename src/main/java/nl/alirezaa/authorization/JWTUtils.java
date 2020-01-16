@@ -7,22 +7,28 @@ import com.auth0.jwt.exceptions.JWTCreationException;
 import com.auth0.jwt.exceptions.JWTDecodeException;
 import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.auth0.jwt.interfaces.DecodedJWT;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jws;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.security.Keys;
 import nl.alirezaa.model.AccountModel;
 import org.joda.time.DateTime;
 
-public class JWTconnection {
+public class JWTUtils {
 
-    private static String key;
-    private static JWTconnection instance;
+    private static byte[] key;
+    private static JWTUtils instance;
 
-    public static synchronized JWTconnection getInstance() {
+    public static synchronized JWTUtils getInstance() {
         if(instance ==  null){
-            instance = new JWTconnection();
+            instance = new JWTUtils();
         }
         return instance;
     }
 
-    public synchronized  void setKey(String secret) {key = secret;}
+    public synchronized  void setKey(byte[] secret) {key = secret;}
+
+    public synchronized byte[] getKey() {return this.key;}
 
     public String createToken(AccountModel account) {
         String token = null;
@@ -43,11 +49,11 @@ public class JWTconnection {
 
     public boolean verifyJwtToken(String token) {
         try {
-            Algorithm algorithm = Algorithm.HMAC256("secret");
+            Algorithm algorithm = Algorithm.HMAC256(key);
             JWTVerifier verifier = JWT.require(algorithm)
                     .withIssuer("auth0")
                     .build(); //Reusable verifier instance
-            DecodedJWT jwt = verifier.verify(key);
+            DecodedJWT jwt = verifier.verify(token);
             return true;
         } catch (
                 JWTVerificationException exception){
@@ -56,13 +62,28 @@ public class JWTconnection {
         }
     }
 
-    public DecodedJWT decodedJWT(String token) {
+    public boolean decodedJWT(String token) {
         try {
-            return JWT.decode(token);
+            Jws<Claims> result = Jwts.parser()
+                    .setSigningKey(Keys.hmacShaKeyFor(getInstance().getKey()))
+                    .parseClaimsJws(token);
         } catch (JWTDecodeException exception){
             exception.printStackTrace();
+            System.out.println("The JWT has an incorrect secret key. The request to the API is restricted.");
         }
-        return null;
+        return false;
+    }
+
+    public String retrieveUsernameFromJWToken(String token) {
+        String username = "";
+
+        Jws<Claims> result = Jwts.parser()
+                .setSigningKey(Keys.hmacShaKeyFor(getInstance().getKey()))
+                .parseClaimsJws(token);
+
+        username = result.getBody().get("accountId").toString();
+
+        return username.toString();
     }
 
 

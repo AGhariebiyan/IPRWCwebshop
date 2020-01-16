@@ -1,13 +1,20 @@
 package nl.alirezaa;
 
 import io.dropwizard.Application;
+import io.dropwizard.auth.AuthDynamicFeature;
+import io.dropwizard.auth.AuthValueFactoryProvider;
+import io.dropwizard.auth.oauth.OAuthCredentialAuthFilter;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
-import nl.alirezaa.authorization.JWTconnection;
+import nl.alirezaa.authorization.JWTUtils;
+import nl.alirezaa.model.AccountModel;
 import nl.alirezaa.resources.AccountResource;
-import nl.alirezaa.resources.AuthorizationResource;
+import nl.alirezaa.resources.LoginResource;
 import nl.alirezaa.resources.ProductResource;
+import nl.alirezaa.services.AuthenticatorService;
+import nl.alirezaa.services.AuthorizerService;
 import org.eclipse.jetty.servlets.CrossOriginFilter;
+import org.glassfish.jersey.server.filter.RolesAllowedDynamicFeature;
 
 import javax.servlet.DispatcherType;
 import javax.servlet.FilterRegistration;
@@ -37,7 +44,7 @@ public class webshopBackendApplication extends Application<webshopBackendConfigu
         //Hierdoor kan de config in hele applicatie gebruikt worden.
         webshopBackendConfiguration = configuration;
 
-        JWTconnection.getInstance().setKey(webshopBackendConfiguration.getSecret());
+        JWTUtils.getInstance().setKey(webshopBackendConfiguration.getSecret().getBytes());
 
         // Dit zorgt ervoor dat alles kan ontvangen.
         final FilterRegistration.Dynamic cors =
@@ -53,7 +60,18 @@ public class webshopBackendApplication extends Application<webshopBackendConfigu
 
         environment.jersey().register(new ProductResource());
         environment.jersey().register(new AccountResource());
-        environment.jersey().register(new AuthorizationResource());
+        environment.jersey().register(new LoginResource());
+
+        environment.jersey().register(new AuthDynamicFeature(
+                new OAuthCredentialAuthFilter.Builder<AccountModel>()
+                        .setAuthenticator(new AuthenticatorService())
+                        .setAuthorizer(new AuthorizerService())
+                        .setPrefix("Bearer")
+                        .buildAuthFilter()));
+
+        environment.jersey().register(RolesAllowedDynamicFeature.class);
+        //If you want to use @Auth to inject a custom Principal type into your resource
+        environment.jersey().register(new AuthValueFactoryProvider.Binder<>(AccountModel.class));
     }
 
 }

@@ -8,7 +8,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class AuthorizationDao {
+public class LoginDao {
 
     // Account model aanmaken die nodig is om gegevens bijv op te halen.
     private AccountModel makeModel(ResultSet result) {
