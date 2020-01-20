@@ -1,4 +1,4 @@
-package nl.alirezaa.authorization;
+package nl.alirezaa.utils;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
@@ -38,6 +38,7 @@ public class JWTUtils {
                     .withExpiresAt(new DateTime().plusMinutes(30).toDate())
                     .withIssuer("auth0")
                     .withClaim("accountId", account.getUser_id())
+                    .withClaim("accoutType", account.getAccountType())
                     .sign(algorithm);
         } catch (
                 JWTCreationException exception){

@@ -1,7 +1,7 @@
 package nl.alirezaa.services;
 
 import nl.alirezaa.DAO.LoginDao;
-import nl.alirezaa.authorization.JWTUtils;
+import nl.alirezaa.utils.JWTUtils;
 import nl.alirezaa.model.AccountModel;
 import nl.alirezaa.model.CredentialModel;
 

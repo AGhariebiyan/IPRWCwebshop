@@ -3,7 +3,7 @@ package nl.alirezaa.services;
 import io.dropwizard.auth.AuthenticationException;
 import io.dropwizard.auth.Authenticator;
 import nl.alirezaa.DAO.AccountDao;
-import nl.alirezaa.authorization.JWTUtils;
+import nl.alirezaa.utils.JWTUtils;
 import nl.alirezaa.model.AccountModel;
 
 import java.sql.SQLException;

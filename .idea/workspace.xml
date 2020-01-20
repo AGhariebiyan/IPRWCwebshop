@@ -2,26 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e63f631-e60a-4b6f-9544-5be0b47a9fbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/resources/LoginResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/AuthorizerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/LoginService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/DAO/AuthorizationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/DAO/LoginDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/authorization/JWTconnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/authorization/JWTUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/model/AccountModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/model/AccountModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/authorization/JWTUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/utils/JWTUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/resources/AccountResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/resources/AccountResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/resources/AuthorizationResource.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/resources/ProductResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/resources/ProductResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/AuthorizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/AuthenticatorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/AuthenticatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/AuthenticatorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/LoginService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/webshopBackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/webshopBackendApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/webshopBackendConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/webshopBackendConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/alirezaa/model/AccountModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/alirezaa/model/AccountModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nl/alirezaa/resources/AccountResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/alirezaa/resources/AccountResource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nl/alirezaa/resources/ProductResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/alirezaa/resources/ProductResource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nl/alirezaa/services/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/alirezaa/services/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/alirezaa/webshopBackendApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/alirezaa/webshopBackendApplication.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +130,8 @@
       <workItem from="1579114395783" duration="6438000" />
       <workItem from="1579160275497" duration="11000" />
       <workItem from="1579162958729" duration="17137000" />
-      <workItem from="1579186603330" duration="3319000" />
+      <workItem from="1579186603330" duration="3385000" />
+      <workItem from="1579525302144" duration="1213000" />
     </task>
     <task id="LOCAL-00001" summary="Rollen toegevoegd + Heel account gemaakt (add, delete, update)">
       <created>1578595484545</created>
@@ -155,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579120770627</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="JWT en authenticatie is af!">
+      <created>1579190009507</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579190009507</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,7 +176,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Rollen toegevoegd + Heel account gemaakt (add, delete, update)" />
     <MESSAGE value="JWT bijna af wordt gegenereerd en gecontroleerd." />
-    <option name="LAST_COMMIT_MESSAGE" value="JWT bijna af wordt gegenereerd en gecontroleerd." />
+    <MESSAGE value="JWT en authenticatie is af!" />
+    <option name="LAST_COMMIT_MESSAGE" value="JWT en authenticatie is af!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="95" key="#com.intellij.execution.impl.EditConfigurationsDialog" />

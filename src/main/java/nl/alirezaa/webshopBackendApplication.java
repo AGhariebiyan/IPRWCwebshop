@@ -6,7 +6,7 @@ import io.dropwizard.auth.AuthValueFactoryProvider;
 import io.dropwizard.auth.oauth.OAuthCredentialAuthFilter;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
-import nl.alirezaa.authorization.JWTUtils;
+import nl.alirezaa.utils.JWTUtils;
 import nl.alirezaa.model.AccountModel;
 import nl.alirezaa.resources.AccountResource;
 import nl.alirezaa.resources.LoginResource;
