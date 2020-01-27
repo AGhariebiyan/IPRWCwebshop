@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e63f631-e60a-4b6f-9544-5be0b47a9fbc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/model/AccountModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/model/AccountModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/resources/AccountResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/resources/AccountResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/utils/JWTUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/utils/JWTUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/alirezaa/model/AccountModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/alirezaa/model/AccountModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/alirezaa/resources/AccountResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/alirezaa/resources/AccountResource.class" afterDir="false" />
-    </list>
+    <list default="true" id="8e63f631-e60a-4b6f-9544-5be0b47a9fbc" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

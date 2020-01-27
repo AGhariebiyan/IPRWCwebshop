@@ -52,7 +52,7 @@ public class JWTUtils {
         try {
             Algorithm algorithm = Algorithm.HMAC256(key);
             JWTVerifier verifier = JWT.require(algorithm)
-                    .withIssuer("Ali Rezaa Ghariebiyan")
+                    .withIssuer("auth0")
                     .build(); //Reusable verifier instance
             DecodedJWT jwt = verifier.verify(token);
             return true;
