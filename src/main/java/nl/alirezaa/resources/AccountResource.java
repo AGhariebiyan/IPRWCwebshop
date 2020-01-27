@@ -12,7 +12,6 @@ import java.sql.SQLException;
 import java.util.List;
 
 @Path("/account")
-
 public class AccountResource {
     private AccountService accountService;
     private AuthenticatorService authenticatorService;
@@ -29,7 +28,6 @@ public class AccountResource {
         return accountService.getAllAccounts();
     }
 
-    @RolesAllowed("ADMIN")
     @Path("/add")
     @POST
     @Consumes(MediaType.APPLICATION_JSON)

@@ -22,7 +22,7 @@ public class LoginService {
         }
 
         if (checkedAccount.getPassword().equals(credentials.getPassword())) {
-            checkedAccount.setToken(JWTUtils.getInstance().createToken(checkedAccount));
+            checkedAccount.setJwttoken(JWTUtils.getInstance().createToken(checkedAccount));
             return Optional.of(checkedAccount);
         }
         return Optional.empty();

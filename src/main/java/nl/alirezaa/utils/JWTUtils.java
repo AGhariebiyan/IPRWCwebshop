@@ -38,7 +38,7 @@ public class JWTUtils {
                     .withExpiresAt(new DateTime().plusMinutes(30).toDate())
                     .withIssuer("auth0")
                     .withClaim("accountId", account.getUser_id())
-                    .withClaim("accoutType", account.getAccountType())
+                    .withClaim("accountType", account.getAccountType())
                     .sign(algorithm);
         } catch (
                 JWTCreationException exception){
@@ -52,7 +52,7 @@ public class JWTUtils {
         try {
             Algorithm algorithm = Algorithm.HMAC256(key);
             JWTVerifier verifier = JWT.require(algorithm)
-                    .withIssuer("auth0")
+                    .withIssuer("Ali Rezaa Ghariebiyan")
                     .build(); //Reusable verifier instance
             DecodedJWT jwt = verifier.verify(token);
             return true;

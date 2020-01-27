@@ -10,7 +10,7 @@ public class AccountModel implements Principal {
     private String email;
     private String password;
     private String accountType;
-    private String token;
+    private String jwttoken;
 
     public AccountModel() {}
 
@@ -60,14 +60,14 @@ public class AccountModel implements Principal {
         this.accountType = accountType;
     }
 
-    @JsonProperty("_token")
-    public String getToken() {
-        return token;
+    @JsonProperty("jwttoken")
+    public String getJwttoken() {
+        return jwttoken;
     }
 
-    @JsonProperty("token")
-    public void setToken(String token) {
-        this.token = token;
+    @JsonProperty("_jwttoken")
+    public void setJwttoken(String jwttoken) {
+        this.jwttoken = jwttoken;
     }
 
     @Override

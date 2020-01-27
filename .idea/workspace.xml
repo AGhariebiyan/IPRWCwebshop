@@ -3,16 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="8e63f631-e60a-4b6f-9544-5be0b47a9fbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/authorization/JWTUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/utils/JWTUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/model/AccountModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/model/AccountModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/resources/AccountResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/resources/AccountResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/resources/ProductResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/resources/ProductResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/AuthenticatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/AuthenticatorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/webshopBackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/webshopBackendApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/utils/JWTUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/utils/JWTUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/alirezaa/model/AccountModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/alirezaa/model/AccountModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/nl/alirezaa/resources/AccountResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/alirezaa/resources/AccountResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/alirezaa/resources/ProductResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/alirezaa/resources/ProductResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/alirezaa/services/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/alirezaa/services/ProductService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +128,12 @@
       <workItem from="1579160275497" duration="11000" />
       <workItem from="1579162958729" duration="17137000" />
       <workItem from="1579186603330" duration="3385000" />
-      <workItem from="1579525302144" duration="1213000" />
+      <workItem from="1579525302144" duration="1352000" />
+      <workItem from="1579536819797" duration="3315000" />
+      <workItem from="1579553695414" duration="2466000" />
+      <workItem from="1579856812138" duration="6221000" />
+      <workItem from="1580066362497" duration="654000" />
+      <workItem from="1580133127177" duration="2278000" />
     </task>
     <task id="LOCAL-00001" summary="Rollen toegevoegd + Heel account gemaakt (add, delete, update)">
       <created>1578595484545</created>
@@ -154,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579190009507</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="authorization bijgewerkt. accounttype wordt meegestuurd in JWT. resources zijn bijgesteld.">
+      <created>1579526665937</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579526665937</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,7 +186,8 @@
     <MESSAGE value="Rollen toegevoegd + Heel account gemaakt (add, delete, update)" />
     <MESSAGE value="JWT bijna af wordt gegenereerd en gecontroleerd." />
     <MESSAGE value="JWT en authenticatie is af!" />
-    <option name="LAST_COMMIT_MESSAGE" value="JWT en authenticatie is af!" />
+    <MESSAGE value="authorization bijgewerkt. accounttype wordt meegestuurd in JWT. resources zijn bijgesteld." />
+    <option name="LAST_COMMIT_MESSAGE" value="authorization bijgewerkt. accounttype wordt meegestuurd in JWT. resources zijn bijgesteld." />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="95" key="#com.intellij.execution.impl.EditConfigurationsDialog" />
