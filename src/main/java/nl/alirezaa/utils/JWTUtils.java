@@ -33,19 +33,23 @@ public class JWTUtils {
     public String createToken(AccountModel account) {
         String token = null;
         try {
-            Algorithm algorithm = Algorithm.HMAC256(key);
-            token = JWT.create()
-                    .withExpiresAt(new DateTime().plusMinutes(30).toDate())
-                    .withIssuer("auth0")
-                    .withClaim("accountId", account.getUser_id())
-                    .withClaim("accountType", account.getAccountType())
-                    .sign(algorithm);
+            if(account != null) {
+                Algorithm algorithm = Algorithm.HMAC256(key);
+                token = JWT.create()
+                        .withExpiresAt(new DateTime().plusMinutes(30).toDate())
+                        .withIssuer("auth0")
+                        .withClaim("accountId", account.getUser_id())
+                        .withClaim("accountType", account.getAccountType())
+                        .sign(algorithm);
+
+                return token;
+            }
         } catch (
                 JWTCreationException exception){
             //Invalid Signing configuration / Couldn't convert Claims.
         }
 
-        return token;
+        return null;
     }
 
     public boolean verifyJwtToken(String token) {

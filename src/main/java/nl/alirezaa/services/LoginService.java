@@ -21,10 +21,14 @@ public class LoginService {
             e.printStackTrace();
         }
 
-        if (checkedAccount.getPassword().equals(credentials.getPassword())) {
+        if (checkedAccount != null) {
             checkedAccount.setJwttoken(JWTUtils.getInstance().createToken(checkedAccount));
             return Optional.of(checkedAccount);
+//            if (checkedAccount.getPassword().equals(credentials.getPassword())) {
+//                checkedAccount.setJwttoken(JWTUtils.getInstance().createToken(checkedAccount));
+//                return Optional.of(checkedAccount);
+//            }
         }
-        return Optional.empty();
+        return Optional.of(new AccountModel());
     }
 }
