@@ -8,6 +8,7 @@ import nl.alirezaa.services.AuthenticatorService;
 import javax.annotation.security.RolesAllowed;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -31,7 +32,7 @@ public class AccountResource {
     @Path("/add")
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
-    public void addAccount (AccountModel account) throws SQLException, ClassNotFoundException {
+    public void addAccount (AccountModel account) throws SQLException, ClassNotFoundException, NoSuchAlgorithmException {
         accountService.addAccount(account);
     }
 

@@ -36,7 +36,7 @@ public class JWTUtils {
             if(account != null) {
                 Algorithm algorithm = Algorithm.HMAC256(key);
                 token = JWT.create()
-                        .withExpiresAt(new DateTime().plusMinutes(30).toDate())
+                        .withExpiresAt(new DateTime().plusMinutes(60).toDate())
                         .withIssuer("auth0")
                         .withClaim("accountId", account.getUser_id())
                         .withClaim("accountType", account.getAccountType())

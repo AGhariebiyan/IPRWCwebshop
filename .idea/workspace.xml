@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e63f631-e60a-4b6f-9544-5be0b47a9fbc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/utils/HashUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/resources/AccountResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/resources/AccountResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/resources/LoginResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/resources/LoginResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/AccountService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/services/LoginService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/alirezaa/utils/JWTUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alirezaa/utils/JWTUtils.java" afterDir="false" />
     </list>
@@ -130,7 +134,7 @@
       <workItem from="1579856812138" duration="6221000" />
       <workItem from="1580066362497" duration="654000" />
       <workItem from="1580133127177" duration="2278000" />
-      <workItem from="1580745129243" duration="2253000" />
+      <workItem from="1580745129243" duration="6459000" />
     </task>
     <task id="LOCAL-00001" summary="Rollen toegevoegd + Heel account gemaakt (add, delete, update)">
       <created>1578595484545</created>
@@ -167,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580167169617</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="login bij foute invoer wordt juist opgevangen">
+      <created>1580747701242</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1580747701242</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +203,8 @@
     <MESSAGE value="JWT en authenticatie is af!" />
     <MESSAGE value="authorization bijgewerkt. accounttype wordt meegestuurd in JWT. resources zijn bijgesteld." />
     <MESSAGE value="werkt!" />
-    <option name="LAST_COMMIT_MESSAGE" value="werkt!" />
+    <MESSAGE value="login bij foute invoer wordt juist opgevangen" />
+    <option name="LAST_COMMIT_MESSAGE" value="login bij foute invoer wordt juist opgevangen" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="95" key="#com.intellij.execution.impl.EditConfigurationsDialog" />

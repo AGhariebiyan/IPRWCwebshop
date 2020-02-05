@@ -8,6 +8,7 @@ import nl.alirezaa.services.LoginService;
 import javax.naming.AuthenticationException;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
 import java.util.Optional;
 
@@ -20,7 +21,7 @@ public class LoginResource {
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Optional<AccountModel> login(CredentialModel credentials) throws SQLException, ClassNotFoundException, AuthenticationException {
+    public Optional<AccountModel> login(CredentialModel credentials) throws SQLException, ClassNotFoundException, AuthenticationException, NoSuchAlgorithmException {
         return loginService.checkCredentials(credentials);
     }
 }
