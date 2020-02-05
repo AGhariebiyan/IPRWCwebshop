@@ -4,7 +4,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class HashUtils {
-    public static final String SALT = "my-salt-text";
+    public static final String SALT = "IPWRAliRezaaRandomSalt";
 
     public static String generateHash(String input) throws NoSuchAlgorithmException {
         StringBuilder hash = new StringBuilder();

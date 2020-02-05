@@ -12,7 +12,6 @@ import java.util.Optional;
 
 public class LoginService {
     private LoginDao loginDao;
-    public static final String SALT = "my-salt-text";
 
     public LoginService() { this.loginDao = new LoginDao();}
 
@@ -21,7 +20,7 @@ public class LoginService {
 
         try {
             String password = credentials.getPassword();
-            String saltedPassword = SALT + password;
+            String saltedPassword = HashUtils.getSALT() + password;
             String hashedPassword = HashUtils.generateHash(saltedPassword);
             credentials.setPassword(hashedPassword);
             checkedAccount = loginDao.checkCredentials(credentials);

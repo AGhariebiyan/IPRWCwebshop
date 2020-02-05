@@ -11,7 +11,6 @@ import java.util.List;
 
 public class AccountService {
     private AccountDao accountDao;
-    public static final String SALT = "my-salt-text";
 
     public AccountService() { this.accountDao = new AccountDao(); }
 
@@ -27,12 +26,9 @@ public class AccountService {
             account.setAccountType(AccountRole.CUSTOMER.getrole());
         }
         String password = account.getPassword();
-        System.out.println(password);
-        String saltedPassword = SALT + password;
-        System.out.println("salted password" + saltedPassword);
+        String saltedPassword = HashUtils.getSALT() + password;
         String hashedPassword = HashUtils.generateHash(saltedPassword);
         account.setPassword(hashedPassword);
-        System.out.println("set password" + hashedPassword);
         accountDao.addAccount(account);
     }
 
