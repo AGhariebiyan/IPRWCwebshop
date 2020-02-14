@@ -22,7 +22,7 @@ public class ProductService {
     }
 
     public void deleteProduct(int id) throws SQLException, ClassNotFoundException{
-        productDao.deleteProduct(id);
+            productDao.deleteProduct(id);
     }
 
     public ProductModel getProductById(int id) throws SQLException, ClassNotFoundException{

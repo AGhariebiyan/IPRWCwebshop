@@ -1,3 +1,5 @@
+secret: 9f9a82104d9deab9e2adde22161435688842a205fc04ebd0e3c0b17e387502dbfc622a980887c7469ade0d8e4cf52ae47a4a1331603e22fed43c71375f053fb3
+
 logging:
   level: INFO
   loggers:

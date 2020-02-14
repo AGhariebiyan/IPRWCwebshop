@@ -6,6 +6,7 @@ import java.util.List;
 import nl.alirezaa.model.ProductModel;
 import nl.alirezaa.services.ProductService;
 
+import javax.annotation.security.RolesAllowed;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
@@ -23,6 +24,7 @@ public class ProductResource {
         return productService.getAllProducts();
     }
 
+    @RolesAllowed("ADMIN")
     @Path("/add")
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
@@ -30,11 +32,14 @@ public class ProductResource {
         productService.addProduct(product);
     }
 
+    @RolesAllowed("ADMIN")
     @Path("/delete/{id}")
     @DELETE
     public void deleteProduct(@PathParam("id") int id) throws SQLException, ClassNotFoundException{
-        productService.deleteProduct(id);
+            productService.deleteProduct(id);
     }
+
+    @RolesAllowed("ADMIN")
     @Path("/update/{id}")
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
